@@ -81,7 +81,7 @@ export default function Home() {
   const frameTimerRef = useRef<NodeJS.Timeout | null>(null);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const recordedChunksRef = useRef<BlobPart[]>([]);
-  const serverBaseUrl = "http://localhost:8000";
+  const serverBaseUrl = "https://nextsign-server.onrender.com/";
 
   // Initialize speech recognition
   useEffect(() => {
